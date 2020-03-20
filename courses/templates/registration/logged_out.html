@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Logged out{% endblock %}
+{% block content %}
+<h1>Logged out</h1>
+<div class="module">
+    <p>Вы успешно вышли из системыю
+        Вы можете <a href="{% url "login" %}">зайти вновь.</a>.</p>
+</div>
+{% endblock %}
